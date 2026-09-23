@@ -23,3 +23,11 @@ console.log("Value: ",user,"| Type: ",typeof user);
 
 let color = ["red","green","blue"];
 console.log("Value: ",color,"|Type: ",typeof color);
+
+//Functions 
+function multiplication(num1, num2){
+    return num1*num2;
+}
+let x1=20;
+let x2=30;
+console.log("Multiplication of ",x1," and ",x2," is ",multiplication(x1,x2));
