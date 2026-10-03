@@ -18,7 +18,7 @@ export const getuserbyid=(req,res)=>{
     else res.json({message:"No user Present"})
 }
 
-export const getuserbycity=(req,res)=>{
+/*export const getuserbycity=(req,res)=>{
     let {city} = req.params;
     let c1 = users
                 .filter((u)=>u.city===city)
@@ -30,9 +30,17 @@ export const getuserbycity=(req,res)=>{
     }    
     else res.json({message:"No user found"});
     //res.json(arr);
-}
+}*/
 
-export const postUser=(req,res)=>{
+export const getuserbycity=(req,res)=>{
+    let {city} = req.params;
+    let usr=users.filter((u)=>u.city===city);
+    if(usr)
+        res.json(usr);
+    else
+        res.json(message,'No data found');
+}
+/*export const postUser=(req,res)=>{
     const user = req.body;
     users.push(user);
 
@@ -40,4 +48,9 @@ export const postUser=(req,res)=>{
         message:"User added Successfully",
         user:user
     })
+}*/
+export const postUser=(req,res)=>{
+    const u1 = req.body;
+    users.push(u1);
+    res.json(u1);
 }
