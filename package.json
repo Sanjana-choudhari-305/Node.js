@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanjana-choudhari-305/Node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Sanjana-choudhari-305/Node.js/issues"
+  },
+  "homepage": "https://github.com/Sanjana-choudhari-305/Node.js#readme",
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "express": "^5.2.1"
+  }
+}
