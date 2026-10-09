@@ -1,0 +1,12 @@
+Description
+Objective: 
+To work with routes for a website using Express.js.
+
+Scenario: 
+Create an Express.js application with two services: Booking and Services.
+You are required to implement routes to manage customer bookings and spa services.
+The Booking service will allow creating and retrieving bookings, while the Services service will allow creating and updating services.
+The application should handle booking details like customer information and booking time, and service details such as cost and rating.
+Ensure the functionality for POST, GET, and PUT operations is correctly implemented.
+
+Ensure the server listens on a  port defined by an environment variable or defaults to a specified port.
